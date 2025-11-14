@@ -6,6 +6,7 @@ import { ClerkProvider } from "@clerk/nextjs";
 import { shadesOfPurple } from "@clerk/themes";
 import Header from "@/components/header";
 import { Toaster } from "sonner";
+import Footer from "@/components/footer";
 
 // Initialize Inter font
 const inter = Inter({ subsets: ["latin"] });

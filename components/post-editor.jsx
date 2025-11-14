@@ -10,6 +10,7 @@ import PostEditorHeader from './post-editor-header'
 import PostEditorContent from './post-editor-content'
 import PostEditorSettings from './post-editor-settings'
 import { toast } from 'sonner'
+import ImageUploadModel from './image-upload-modal'
 
 // Validation schema for posts
 const postsSchema = z.object({
@@ -143,7 +144,21 @@ const PostEditor = ({  initialData = null,  mode = "create" }) => {
   };
  
   // Image selection handler 4
-  const handleImageSelect = (imageData) => {};
+  const handleImageSelect = (imageData) => {
+      if (imageModalType === "featured") {
+      setValue("featuredImage", imageData.url);
+      toast.success("Featured image added!");
+    } else if (imageModalType === "content" && quillRef) {
+      const quill = quillRef.getEditor();
+      const range = quill.getSelection();
+      const index = range ? range.index : quill.getLength();
+
+      quill.insertEmbed(index, "image", imageData.url);
+      quill.setSelection(index + 1);
+      toast.success("Image inserted!");
+    }
+    setIsImageModalOpen(false);
+  };
 
   return (
     <div className="min-h-screen bg-slate-900 text-white">
@@ -183,8 +198,23 @@ const PostEditor = ({  initialData = null,  mode = "create" }) => {
       />
 
       {/* Image Upload dialog  */}
-
-
+      
+      <ImageUploadModel
+      isOpen={isImageModalOpen}
+      Onclose={()=> setIsImageModalOpen(false)}
+      onImageSelect={handleImageSelect}
+      title={imageModalType === 'feature' ? "Upload Featured Image" : "Insert Image"}
+      />
+     
+       {/* Footer */}
+        <footer className="relative z-10 border-t py-8 px-4 sm:px-6 ">
+        <div className="max-w-7xl mx-auto text-center">
+          <p className="text-muted-foreground">
+            Made with ❤️ by{" "}
+            <span className="text-foreground font-semibold">M u z a h i r _ A L i</span>
+          </p>
+        </div>
+      </footer>
     </div>
   )
 }

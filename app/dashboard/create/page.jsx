@@ -20,6 +20,7 @@ const CreatePost = () => {
   return <BarLoader width={"100%"} color='#D8B4FE'/>
  }
 
+ // Prompt user to set username if not set
   if (!currentUser?.username) {
     return (
       <div className="h-80 bg-slate-900 flex items-center justify-center p-8">

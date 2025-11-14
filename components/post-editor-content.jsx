@@ -271,7 +271,7 @@ const PostEditorContent = ({ form, setQuillRef, onImageUpload,}) => {
     </main>
  
 
- // Global styles for Quill editor 
+ 
     <style jsx global>
       {`
       .ql-editor {
@@ -343,6 +343,7 @@ const PostEditorContent = ({ form, setQuillRef, onImageUpload,}) => {
         }
       `}
     </style>
+  
     </>
   )
 }

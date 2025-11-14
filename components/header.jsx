@@ -4,9 +4,9 @@ import { useStoreUser} from '@/hooks/use-store-user';
 import { Authenticated, Unauthenticated } from 'convex/react'
 import Image from 'next/image';
 import Link from 'next/link';
-import { usePathname } from 'next/navigation';
+import { usePathname, useRouter } from 'next/navigation';
 
-import React from 'react'
+import React, { useEffect } from 'react'
 import { BarLoader } from 'react-spinners';
 import { Button } from './ui/button';
 import { LayoutDashboard } from 'lucide-react';
@@ -15,12 +15,19 @@ import { LayoutDashboard } from 'lucide-react';
   const {isLoading , isAuthenticated} =  useStoreUser();
   const path = usePathname();
 
-  // Hide header on dashboard pages
-  if (path.includes("/dashboard")){
+    // Redirect authenticated users from landing page to feed
+   const router = useRouter();
+   useEffect(() => {
+    if (!isLoading && isAuthenticated && path === "/") {
+      router.push("/feed");
+    }
+  }, [isLoading, isAuthenticated, path, router]);
+
+  // Hide header on public profile and pages (put not on feed)
+  if (path !== '/' && path !=='/feed' && path.split('/').length >= 2){
     return null;
   }
-
-
+  
    return (
       <header className="fixed top-6 left-1/2 transform -translate-x-1/2 z-50 w-full max-w-3xl px-4">
       {/* Center - Glass Navigation Container */}
