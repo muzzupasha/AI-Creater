@@ -4,7 +4,10 @@ AI Creator is a modern, full-stack AI-powered writing platform designed to help 
 Built with a highly scalable architecture using Next.js 15, React 19, Convex, Clerk, and ImageKit, it delivers a smooth, real-time, cloud-connected writing experience optimized for speed and usability.
 
 
+---
+
 🎯 Why AI Creator?
+
 Content creation is becoming more AI-driven, but most tools either feel too complex or lack real-time responsiveness.
 AI Creator bridges this gap by offering:
 
@@ -18,8 +21,11 @@ Cloud-powered persistence and media support
 
 Clean, accessible UI focused on productivity
 
+
 This makes AI Creator a great fit for writers, students, marketers, and developers building AI workflows.
 
+
+---
 
 🧠 Core Features
 
@@ -83,6 +89,8 @@ Secure backend functions
 Zero-config infrastructure
 
 
+
+---
 
 🏗 Architecture Overview
 
@@ -180,22 +188,8 @@ App runs on:
 
 ---
 
-📸 Screenshots (Add Yours Here)
-
-Dashboard preview
-
-Editor screen
-
-AI suggestion modal
-
-Image upload UI
-
-Mobile UI
 
 
-Place files under public/screenshots/ and embed them like this:
-
-![Dashboard](public/screenshots/dashboard.png)
 
 
 ---
@@ -266,7 +260,10 @@ Released under the MIT License — feel free to use and modify.
 
 🧑‍💻 Author
 
-Muzahir Ali 
+Muzahir Ali
 Full-Stack Developer • AI Enthusiast
 Open to collaborations & opportunities.
+
+
+---
 
