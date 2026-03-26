@@ -153,5 +153,5 @@ This project is open-source and available under the [MIT License](LICENSE).
 
 ---
 <div align="center">
-  <i>Built with ❤️ using Next.js, Convex, and Google Gemini</i>
+  <i>Made with ❤️by Muzahir ali </i>
 </div>
