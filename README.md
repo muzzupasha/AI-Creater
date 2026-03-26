@@ -2,6 +2,14 @@
   <h1>✨ AI Creator</h1>
   <p><strong>A Next-Generation AI Content Creation Platform</strong></p>
   
+<p> ❓ Problem
+Content creation is time-consuming...
+
+💡 Solution
+AI Creator helps users generate blogs, captions...
+
+</>
+
   <p>
     <a href="https://ai-creater.vercel.app/" target="_blank">
       <img src="https://img.shields.io/badge/Live_Website-Available-success?style=for-the-badge&logo=vercel" alt="Live Preview" />
