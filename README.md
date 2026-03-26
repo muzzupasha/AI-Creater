@@ -2,13 +2,6 @@
   <h1>✨ AI Creator</h1>
   <p><strong>A Next-Generation AI Content Creation Platform</strong></p>
   
-<p> ❓ Problem
-Content creation is time-consuming...
-
-💡 Solution
-AI Creator helps users generate blogs, captions...
-
-</>
 
   <p>
     <a href="https://ai-creater.vercel.app/" target="_blank">
@@ -31,6 +24,14 @@ AI Creator helps users generate blogs, captions...
 ## 🚀 Overview
 
 **AI Creator** is a powerful and intuitive SaaS application designed to help users generate high-quality content effortlessly. Leveraging the power of **Google's Gemini AI**, this platform provides a seamless experience for dynamic content creation, complete with rich text editing, secure authentication, and real-time data synchronization.
+
+<p> ❓ Problem
+Content creation is time-consuming...
+
+💡 Solution
+AI Creator helps users generate blogs, captions...
+
+<p/>
 
 🔗 **[Live Demo](https://ai-creater.vercel.app/)**
 
