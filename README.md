@@ -23,7 +23,7 @@
 
 ## 🚀 Overview
 
-**AI Creator** is a powerful and intuitive SaaS application designed to help users generate high-quality content effortlessly. Leveraging the power of **Google's Gemini AI**, this platform provides a seamless experience for dynamic content creation, complete with rich text editing, secure authentication, and real-time data synchronization.
+**AI Creator** is a powerful and intuitive SaaS application designed to help users generate high-quality content effortlessly. Leveraging the power of **Google's Gemini AI and imageKit**, this platform provides a seamless experience for dynamic content creation, complete with rich text editing, secure authentication, and real-time data synchronization.
 
 <p> ❓ Problem
 Creating high-quality content (blogs, captions, posts) takes a lot of time and effort. Many users struggle with writer’s block, consistency, and productivity.
